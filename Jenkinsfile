@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker 'ubuntu:18.04' }
 
     stages {
         stage('Build') {
